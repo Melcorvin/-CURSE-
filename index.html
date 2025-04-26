@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> 🔥CURSE Menu Ordering</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="images/x-icon" href="Favicon.png">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <img 
+  src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/98897923127737.56322a55b4f6e.png" 
+  alt="Molly Logo" 
+  class="Molly-circle"
+/>
+  <h1> 🔥CURSE   </h1>
+
+  <div id="menu"></div>
+
+  <div class="summary glass">
+    <h2>🔥Order Summary🔥</h2>
+    <ul id="order-summary"></ul>
+    <h2><strong>Total:</strong> ₱ <span id="total">0.00</span></h2>
+  </div>
+
+  <div class="payment-section glass">
+    <h2>🔥Select Payment Method🔥</h2>
+    <button onclick="pay('GCash')">🔥Pay with GCash🔥</button>
+    <button onclick="pay('Bank')">🔥Pay with Bank🔥</button>
+    <button onclick="pay('Cash')">🔥Pay with Cash🔥</button>
+  </div>
+
+  <div id="receipt" class="receipt glass" style="display:none;"></div>
+
+  <div id="loading" class="loading-container">
+    <h3>🔥Processing Payment...</h3>
+    <div class="progress-bar">
+      <div class="progress"></div>
+    </div>
+  </div>
+
+  <button class="start-new-order" onclick="startNewOrder()">🔥Start New Order🔥</button>
+    <script src="script.js"></script>
+</body>
+</html>
